@@ -6,6 +6,7 @@
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
     "lint:fix": "eslint --ext .js,.vue src --fix",
+    "test": "jest",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
     "build": "webpack --config build/webpack.config.dev.js"
   },
@@ -20,14 +21,33 @@
     "url": "https://github.com/LeeHyungGeun/vue-leehyunggeun/issues"
   },
   "homepage": "https://github.com/LeeHyungGeun/vue-leehyunggeun#readme",
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ],
+    "collectCoverage": true
+  },
   "dependencies": {
     "vue": "^2.5.17",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
+    "@vue/test-utils": "^1.0.0-beta.25",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
     "babel-loader": "^8.0.4",
     "babel-preset-env": "^1.7.0",
     "copy-webpack-plugin": "^4.5.3",
@@ -41,8 +61,11 @@
     "eslint-plugin-standard": "^4.0.0",
     "eslint-plugin-vue": "^4.7.1",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "jest-serializer-vue": "^2.0.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
+    "vue-jest": "^3.0.0",
     "vue-loader": "^15.4.2",
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.5.17",
