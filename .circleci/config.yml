@@ -28,5 +28,3 @@ jobs:
       # run test!
       - run: npm run test
 
-      - store_test_results:
-          path: test-results          
