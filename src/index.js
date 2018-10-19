@@ -3,13 +3,15 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
+const Home = { template: '<div>Home</div>' }
+const Me = { template: '<div>foo</div>' }
+const Resume = { template: '<div>bar</div>' }
 const NotFoundView = { template: '<div>NotFoundView</div>' }
 
 const routes = [
-  { path: '/foo', component: Foo, name: 'Foo' },
-  { path: '/bar', component: Bar, name: 'Bar' },
+  { path: '/', component: Home, name: 'Home' },
+  { path: '/me', component: Me, name: 'Me' },
+  { path: '/resume', component: Resume, name: 'Resume' },
   { path: '*', component: NotFoundView }
 ]
 
