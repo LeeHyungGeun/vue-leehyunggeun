@@ -13,15 +13,16 @@ function resolve (dir) {
 
 module.exports = {
   mode: 'development',
+  entry: './src/app.js',
   devServer: {
     hot: true,
     watchOptions: {
       poll: true
     }
   },
-  output: {
-    publicPath: 'dist/'
-  },
+  // output: {
+  //   publicPath: 'dist'
+  // },
   module: {
     rules: [
       {
