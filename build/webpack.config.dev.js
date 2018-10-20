@@ -20,9 +20,9 @@ module.exports = {
       poll: true
     }
   },
-  output: {
-    publicPath: 'dist/'
-  },
+  // output: {
+  //   publicPath: 'dist'
+  // },
   module: {
     rules: [
       {
