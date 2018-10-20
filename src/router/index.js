@@ -5,16 +5,14 @@ import Resume from '../views/Resume.vue'
 
 Vue.use(Router)
 
-export function createRouter () {
-  return new Router({
-    mode: 'history',
-    fallback: false,
-    scrollBehavior: () => ({ y: 0 }),
-    routes: [
-      { path: '/me', component: Me },
-      { path: '/resume', component: Resume }
-      // { path: '/', component: Me }
-      // { path: '/', redirect: '/me' }
-    ]
-  })
-}
+export default new Router({
+  mode: 'history',
+  fallback: false,
+  scrollBehavior: () => ({ y: 0 }),
+  routes: [
+    { path: '/me', component: Me },
+    { path: '/resume', component: Resume }
+    // { path: '/', component: Me }
+    // { path: '/', redirect: '/me' }
+  ]
+})
