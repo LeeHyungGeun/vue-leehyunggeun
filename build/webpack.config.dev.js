@@ -58,6 +58,7 @@ module.exports = {
     ]
   },
   resolve: {
+    modules: ['node_modules'],
     alias: {
       styles: resolve('static/styles'),
       components: resolve('src/components')
