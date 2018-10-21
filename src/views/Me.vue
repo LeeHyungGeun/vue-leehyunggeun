@@ -1,6 +1,6 @@
 <template>
   <div class="me">
-    <Me name="KIM LEE PARK" />
+    <Me />
   </div>
 </template>
 
