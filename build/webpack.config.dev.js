@@ -57,6 +57,12 @@ module.exports = {
       }
     ]
   },
+  resolve: {
+    alias: {
+      styles: resolve('static/styles'),
+      components: resolve('src/components')
+    }
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new VueLoaderPlugin(),
