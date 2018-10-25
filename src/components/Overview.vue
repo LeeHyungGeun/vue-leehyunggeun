@@ -4,10 +4,20 @@
       Overview
     </h2>
     <p class="description">
-      I am passionate Senior Front-End engineer with a strong background in design, development, leadership and exceptional problem solving skills. I’d love to work in a company that could benefit from my strengths and that promotes professional growth & advancement in their products and engineering teams.
+      {{ overview.description }}
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  data: function () {
+    return {
+      overview: this.$store.state.overview
+    }
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 @import 'styles/variables.scss';
