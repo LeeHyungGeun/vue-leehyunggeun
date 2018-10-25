@@ -105,9 +105,8 @@ export default {
 .resume-wrap {
   background: $background;
   .resume {
-    text-align: center;
-    margin-left: 5rem;
-    margin-right: 5rem;
+    max-width: 850px;
+    margin: 0 auto;
     & .resume-items {
       padding-bottom: 2rem;
     }

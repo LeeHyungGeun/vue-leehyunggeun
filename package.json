@@ -8,6 +8,7 @@
     "lint:fix": "eslint --ext .js,.vue src --fix",
     "test": "jest",
     "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "start": "npm run dev",
     "build": "webpack --config build/webpack.config.dev.js"
   },
   "repository": {
