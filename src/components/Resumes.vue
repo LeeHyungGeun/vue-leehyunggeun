@@ -6,9 +6,9 @@
     >
       {{ resume.category }}
     </h2>
-    <template v-for="item in resume.items">
+    <template v-for="(item, index) in resume.items">
       <div
-        :key="item"
+        :key="index"
         :style="{ borderColor: resume.backgroundColor }"
         class="item"
       >
@@ -22,7 +22,7 @@
             {{ item.date }}
           </div>
           <div
-            v-if="skill"
+            v-if="item.skill"
             class="skill"
           >
             {{ item.skill }}

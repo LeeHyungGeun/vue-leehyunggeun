@@ -1,5 +1,5 @@
 export default {
-  FETCH_RESUMES (context) {
-    context.commit('FETCH_RESUMES')
+  CHANGE_MENU ({ commit }, menu) {
+    commit('CHANGE_MENU', menu)
   }
 }

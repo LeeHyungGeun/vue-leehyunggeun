@@ -1,5 +1,5 @@
 export default {
-  FETCH_RESUMES (state) {
-    return state.resumes
+  CHANGE_MENU (state, menu) {
+    state.menu = menu
   }
 }

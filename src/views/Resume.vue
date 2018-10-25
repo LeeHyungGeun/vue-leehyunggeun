@@ -3,10 +3,10 @@
     <div class="resume">
       <Overview :overview="overview" />
       <div class="resume-items">
-        <template v-for="resume in resumes">
+        <template v-for="(resume, key) in resumes">
           <Resumes
             :resume="resume"
-            :key="resume"
+            :key="key"
           />
         </template>
       </div>
